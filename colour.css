@@ -1,36 +1,48 @@
 :root {
     --green: rgb(67, 148, 121);
+    --dgreen: rgb(49, 103, 85);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 div.side {
     background-color: var(--green);
-    max-width: 18vw;
+    max-width: 15vw;
     height: 150vh;
     max-height: 150vh;
     margin: 0px;
     color: white;
-    box-sizing: border-box;
-    justify-content: center;
 }
 
 .side-img {
-    width: 18vw;
-    height: 18vw;
+    width: 15vw;
+    height: 15vw;
     overflow: hidden;
 }
 
 .side-img img {
     max-height: 200px;
     max-width: 200px;
-    width: 18vw;
-    height: 18vw;
-    box-sizing: border-box;
+    width: 15vw;
+    height: 15vw;
     padding: 10px;
 }
 
 h1 {
     color:white;
     font-size: 40px;
+}
+
+.side-text-headers {
+    background-color: var(--dgreen);
 }
 
 div.main h2 {
