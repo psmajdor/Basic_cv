@@ -79,6 +79,7 @@ div.main {
 div.main h2 {
     color: var(--green);
     margin: 0px;
+    text-shadow: 3px 3px 3px rgb(175, 202, 250);
 }
 
 div.main hr {
