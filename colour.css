@@ -15,33 +15,39 @@ body {
 
 div.side {
     background-color: var(--green);
-    max-width: 15vw;
-    height: 150vh;
-    max-height: 150vh;
+    max-width: 17vw;
     margin: 0px;
     color: white;
-    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+.side-name {
+    color:white;
+    font-size: 1.5em;
+    margin-left: 10px;
+    line-height: 50%;
 }
 
 .side-img {
-    width: 15vw;
-    height: 15vw;
-    overflow: hidden;
+    width: 100%;
+    height: 17vw;
+    max-height: 200px;
+    max-width: 200px;
+    position: relative;
 }
 
 .side-img img {
-    max-height: 200px;
-    max-width: 200px;
-    width: 15vw;
-    height: 15vw;
-    padding: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    position: absolute;
 }
 
-h1 {
-    color:white;
-    font-size: 40px;
-    margin-left: 15px;
+img:hover {
+    animation: spin 10000ms linear infinite;
 }
+
 
 .side-text-headers {
     background-color: var(--dgreen);
@@ -51,10 +57,17 @@ h1 {
     margin-left: 10px;
 }
 
-.side-text-paragraphs {
+.side-text-paragraphs-singleline {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 10px;
+    line-height: 0.7em;
+}
+.side-text-paragraphs-interests {
+    margin-left: 4px;
+    margin-right: 4px;
     padding-left: 10px;
 }
-
 
 div.main {
     margin: 10px 0px 0px 20px;
@@ -75,4 +88,41 @@ div.main hr {
 
 div.main-text {
     margin-left: 150px;
+    transition: all 500ms;
 }
+
+div.main-text:hover {
+    background-color: var(--green);
+    color: rgb(255, 252, 234);
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 50%;
+    }
+}
+
+
+
